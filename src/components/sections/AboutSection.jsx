@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollingWords from '../common/ScrollingWords';
 
 function generateCircleText(text = '', repeat = 2) {
   return Array(repeat).fill(text).join('').split('');
@@ -10,7 +11,7 @@ const AboutSection = () => {
 
   return (
     <section className="relative bg-white py-24 w-full" aria-labelledby="about-section-title">
-      <div className="w-full grid md:grid-cols-2 gap-8 px-4 max-w-7xl mx-auto">
+      <div className="w-full grid md:grid-cols-[1fr_2fr] gap-8 px-4 max-w-7xl mx-auto">
         
         {/* Colonne gauche - Photo */}
         <div className="relative md:h-[700px]">
@@ -146,54 +147,51 @@ const AboutSection = () => {
         </div>
 
         {/* Colonne droite - Contenu */}
-        <div className="space-y-8">
+        <div className="md:pl-16 space-y-8">
           <h2 
-            id="about-section-title"
-            className="text-sm uppercase tracking-[0.3em] text-[#b0003a]"
+            id="about-section-title" 
+            className="text-xl font-bold text-[#b0003a] mb-4 uppercase tracking-widest"
           >
             À Propos
           </h2>
           
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
-            Je Développe des Systèmes
+          <h3 className="text-2xl md:text-3xl font-bold leading-tight text-black">
+           Je crée des applications web 
             <br />
-            <span className="text-[#b0003a]">Qui Fonctionnent</span>
-          </h1>
+            <span className="text-[#b0003a]">Fiables et Performantes</span>
+          </h3>
 
-          <div className="space-y-6 text-gray-600 md:text-lg">
+          <div className="space-y-6 font-medium text-black">
             <p>
-              Développeur Full-Stack avec 5 ans d'expérience dans la création
-              d'applications web performantes. Expertise en architecture cloud
-              et solutions scalables.
-            </p>
-            <p>
-              Passionné par l'innovation technologique et les bonnes pratiques,
-              je transforme des concepts complexes en solutions logicielles
-              robustes.
+            Développeur  avec 3 ans d'expérience, spécialisé en JavaScript et
+            technologies modernes de développement web. J'ai acquis une solide expertise
+            dans le développement web. Ma rigueur dans l'application des bonnes pratiques
+            et ma capacité à collaborer en équipe me permettent de contribuer
+            efficacement à des projets ambitieux.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 pt-8 pb-8 border-t border-b border-black-200">
             <InfoItem label="Nom" value="Alexandre Parent" />
-            <InfoItem label="Âge" value="29 Ans" />
-            <InfoItem label="Poste" value="Développeur Full-Stack" />
-            <InfoItem label="Téléphone" value="+33 6 12 34 56 78" />
-            <InfoItem label="Email" value="contact@alex.dev" />
-            <InfoItem label="Nationalité" value="Française" />
+            <InfoItem label="Âge" value="26 Ans" />
+            <InfoItem label="Téléphone" value="+33 6 18 73 49 23" />
+            <InfoItem label="Email" value="alexandrepar.pro@gmail.com" />
           </div>
 
-          <div className="pt-8 border-t border-gray-200">
-            <div className="flex items-end justify-end gap-4">
+          <div className="">
+            <div className="flex items-end align-end gap-4">
               <div className="font-handwriting text-3xl text-[#b0003a]">
                 Alexandre Parent
               </div>
-              <div className="text-sm text-gray-500">
-                <span className="block">Software Architect</span>
-                <span className="block">Google Cloud</span>
+              <div className="text-black">
+                <span className="block">Full-Stack Developer</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-24">
+        <ScrollingWords />
       </div>
     </section>
   );
@@ -201,11 +199,11 @@ const AboutSection = () => {
 
 const InfoItem = ({ label, value }) => (
   <div 
-    className="flex justify-between items-center p-3 border-b border-gray-100 hover:bg-gray-50 transition-colors"
+    className="flex items-center space-x-4"
     role="row"
   >
-    <span className="text-gray-500">{label}</span>
-    <span className="font-medium text-gray-800">{value}</span>
+    <span className="text-black w-1/3">{label}</span>
+    <span className="font-medium text-black text-left w-2/3 ">{value}</span>
   </div>
 );
 
