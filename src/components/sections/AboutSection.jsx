@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollingWords from '../common/ScrollingWords';
+import ScrollingBanners from '../common/ScrollingBanners';
 
 function generateCircleText(text = '', repeat = 2) {
   return Array(repeat).fill(text).join('').split('');
@@ -173,7 +173,8 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-2 gap-4 pt-8 pb-8 border-t border-b border-black-200">
             <InfoItem label="Nom" value="Alexandre Parent" />
-            <InfoItem label="Âge" value="26 Ans" />
+            <InfoItem label="Âge" value="26 ans" />
+            <InfoItem label="Expérience" value="3 ans" />
             <InfoItem label="Téléphone" value="+33 6 18 73 49 23" />
             <InfoItem label="Email" value="alexandrepar.pro@gmail.com" />
           </div>
@@ -191,7 +192,11 @@ const AboutSection = () => {
         </div>
       </div>
       <div className="mt-24">
-        <ScrollingWords />
+      <ScrollingBanners 
+    topWords={['FULLSTACK DEVELOPER', 'JAVASCRIPT SPECIALIST', 'FRONTEND ARCHITECT']} 
+    bottomWords={['OPEN FOR WORK', 'Let’s Work Together', "READY TO INNOVATE"]} 
+  />
+
       </div>
     </section>
   );

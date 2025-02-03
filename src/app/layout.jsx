@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans bg-white text-dark antialiased transition-colors duration-300">
         {/* Structure principale */}
         <div className="min-h-screen flex flex-col">
-          <main className="flex-1">
+          <main className="flex-1 overflow-x-hidden">
             <div className="max-w-screen-3xl mx-auto px-4 sm:px-6 lg:px-8">
               {children}
             </div>

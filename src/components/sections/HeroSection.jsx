@@ -1,3 +1,5 @@
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 export default function HeroSection() {
     return (
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white">
@@ -9,29 +11,47 @@ export default function HeroSection() {
         </div>
   
         {/* Contenu */}
-        <div className="text-center space-y-8">
-          <h1 className="text-6xl md:text-8xl font-bold text-primary-600">
-            Alexandre Parent
-          </h1>
+        <div className="text-center space-y-8 w-full max-w-4xl mx-auto relative">
+          <div className="flex flex-col items-center">
+            <div className="flex items-center space-x-2 mb-4 text-sm text-black-600 font-medium">
+              <span className="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
+              <span>Disponible pour travailler</span>
+            </div>
+            <h1 className="text-7xl md:text-9xl font-bold text-black uppercase">
+              Alexandre Parent
+            </h1>
+          </div>
           
           <div className="space-y-4">
-            <p className="text-2xl md:text-3xl font-mono text-primary-800">
-              {`<Développeur Full-Stack />`}
-            </p>
-            
-            <div className="flex justify-center space-x-4">
-              <a href="#contact" className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all shadow-lg hover:shadow-primary-500/30">
-                Contactez-moi
-              </a>          
-              <a href="#projets" className="px-6 py-3 border-2 border-primary-500/20 hover:border-primary-500 text-primary-800 rounded-lg transition-all">
-                Voir les projets
-              </a>
+            <div className="flex justify-center items-center space-x-4">
+              <div className="flex space-x-4">
+                <a href="#contact" className="px-6 py-3 bg-primary-600 text-white rounded-lg shadow-lg">
+                  Contactez-moi
+                </a>          
+                <a href="#projets" className="px-6 py-3 border-2 border-primary-500/20 text-primary-800 rounded-lg">
+                  Voir les projets
+                </a>
+              </div>
+              
+              <div className="flex space-x-2 ml-4">
+                <a 
+                  href="https://www.linkedin.com/in/alexandre-parent-b79259175" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 border border-primary-500/20 rounded-lg"
+                >
+                  <FaLinkedin className="text-2xl text-primary-800" />
+                </a>
+                <a 
+                  href="https://github.com/Alexandre-Parent" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 border border-primary-500/20 rounded-lg"
+                >
+                  <FaGithub className="text-2xl text-primary-800" />
+                </a>
+              </div>
             </div>
-          </div>
-  
-          {/* Avatar flottant */}
-          <div className="mt-16 animate-float">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-500 to-blue-500 rounded-full shadow-2xl" />
           </div>
         </div>
       </section>

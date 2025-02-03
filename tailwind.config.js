@@ -23,11 +23,14 @@ module.exports = {
         mono: ['Fira Code', 'monospace'],
         handwriting: ['"Dancing Script"', 'cursive']
       },
+      fontSize: {
+        '8xl': '6rem', 
+        '9xl': '8rem',
+      },
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'spin-slow': 'spin 8s linear infinite',
         'rotate-slow': 'rotate 40s linear infinite',
-        "marquee": 'marquee 30s linear infinite',
       },
       keyframes: {
         float: {
@@ -38,10 +41,6 @@ module.exports = {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        }
       }
     },
     container: {

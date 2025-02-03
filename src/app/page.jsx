@@ -1,7 +1,7 @@
 import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ExperienceSection from '@/components/sections/ExperienceSection';
-import ContactSection from '@/components/sections/ContactSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
 import Footer from '@/components/common/Footer';
 
 export default function Home() {
@@ -9,8 +9,8 @@ export default function Home() {
     <div className="container mx-auto px-4 py-16 max-w-7xl">
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
       <ExperienceSection />
-      <ContactSection />
       <Footer />
     </div>
   );
