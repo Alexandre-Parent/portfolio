@@ -171,7 +171,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-8 pb-8 border-t border-b border-black-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-cols-2 gap-4 pt-8 pb-8 border-t border-b border-black-200">
             <InfoItem label="Nom" value="Alexandre Parent" />
             <InfoItem label="Âge" value="26 ans" />
             <InfoItem label="Expérience" value="3 ans" />

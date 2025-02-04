@@ -6,7 +6,7 @@ export const experiences = [
       logo: '',
       title: "Développeur Fullstack",
       subtitle: "Freelance",
-      description: "Conception et développement d'applications web sur mesure pour clients internationaux"
+      description: "Conception et développement d'applications web sur mesure"
     },
     rightContent: {
       
@@ -19,14 +19,14 @@ export const experiences = [
       logo: '/img/experience/logoshin.png',
       title: "Développeur Fullstack",
       subtitle: "Shin agency",
-      description: "Conception et développement d'applications web sur mesure pour clients internationaux"
+      description: "Conception et développement de sites e-commerce et vitrines. Maintenance et évolutions. Mise en place de tests automatisés"
     },
     rightContent: {
       type: 'job',
       logo: '/img/experience/logoHetic.png',
       title: "Mastère CTO & Tech Lead",
       subtitle: "Hetic",
-      description: "Conception et développement d'applications web sur mesure pour clients internationaux"
+      description: "Le Mastère CTO & Tech Lead permet d’acquérir une expertise forte dans les langages, les infrastructures et les méthodologies de programmation."
     }
   },
   {
@@ -36,7 +36,7 @@ export const experiences = [
       logo: '/img/experience/logoN2D.jpg',
       title: "Développeur Front-end",
       subtitle: "N2D",
-      description: "Implémentation d'interfaces utilisateur complexes avec React et optimisation des performances"
+      description: "Intégration de newsletter, et réalisation front-end pour les sites de l'agence"
     },
     // rightContent: {
     //   type: 'image',
@@ -52,7 +52,7 @@ export const experiences = [
       logo: '/img/experience/logoMMI.png',
       title: "DUT MMI",
       subtitle: "Montbéliard",
-      description: "Implémentation d'interfaces utilisateur complexes avec React et optimisation des performances"
+      description: "Le DUT MMI forme des professionnels polyvalents en intégrant des compétences en création graphique, développement web, communication numérique, gestion de projet et production audiovisuelle."
     },
     rightContent: {
       type: 'image',

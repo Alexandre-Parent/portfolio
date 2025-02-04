@@ -19,7 +19,7 @@ export default function ProjectModal({ project, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Image Section */}
-        <div className="relative h-[500px] overflow-hidden">
+        <div className="relative h-[500px] md:h-[500px] sm:h-[300px] max-h-[150px] sm:max-h-none overflow-hidden">
           <img 
             src={project.image} 
             alt={project.title} 
@@ -33,12 +33,12 @@ export default function ProjectModal({ project, onClose }) {
         {/* Details Section */}
         <div className="p-6 flex flex-col justify-between">
           {/* Close Button */}
-          <button 
+          {/* <button 
             onClick={onClose}
             className="absolute top-4 right-4 text-3xl text-gray-600 hover:text-black transition-colors"
           >
             ×
-          </button>
+          </button> */}
 
           {/* Project Description */}
           <div>
