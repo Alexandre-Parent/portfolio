@@ -10,22 +10,24 @@ export default function HeroSection() {
           </div>
         </div>
   
-        <div className="text-center space-y-8 w-full max-w-4xl mx-auto relative">
+        <div className="text-center space-y-4 w-full max-w-4xl mx-auto relative">
           <div className="flex flex-col items-center">
-            <div className="flex items-center space-x-2 mb-4 text-sm md:text-base text-black-600 font-medium">
+            <div className="flex items-center space-x-2 text-sm md:text-base text-black-600 font-medium">
               <span className="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
               <span>Disponible pour travailler</span>
             </div>
-            <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-black uppercase px-4">
+            <h1 className="text-6xl  md:text-7xl lg:text-9xl font-bold text-black uppercase mt-8 px-4 mb-12 leading-[0.95]">
               Alexandre Parent
             </h1>
           </div>
           
-          <div className="space-y-4">
-            {/* Modification principale ici */}
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center">
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" className="px-6 py-3 bg-primary-600 text-white rounded-lg shadow-lg">
+          <div className="space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center justify-center">
+              <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+                <a 
+                  href="mailto:alexandrepar.pro@gmail.com" 
+                  className="px-6 py-3 bg-primary-600 text-white rounded-lg shadow-lg"
+                >
                   Contactez-moi
                 </a>          
                 <a 

@@ -69,3 +69,13 @@ button, button *,
 .cursor-pointer * {
     cursor: none !important;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        cursor: auto !important;
+    }
+
+    .custom-cursor {
+        display: none !important;
+    }
+}
