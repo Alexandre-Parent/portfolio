@@ -15,10 +15,8 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -28,7 +26,6 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
     const topBanner = topBannerRef.current;
     const bottomBanner = bottomBannerRef.current;
 
-    // Animate top banner (left to right)
     const topAnimation = anime({
       targets: topBanner,
       translateX: '-50%',
@@ -37,7 +34,6 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
       loop: true
     });
 
-    // Animate bottom banner (right to left)
     const bottomAnimation = anime({
       targets: bottomBanner,
       translateX: ['-50%', '0%'],
@@ -46,14 +42,12 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
       loop: true
     });
 
-    // Cleanup function
     return () => {
       topAnimation.pause();
       bottomAnimation.pause();
     };
   }, [topWords, bottomWords]);
 
-  // Calculate how many times we need to repeat words to fill the screen
   const calculateRepetitions = (words: string[]) => {
     const wordWidth = 100 * words.length;
     const repetitions = Math.ceil(windowWidth / wordWidth) + 6;
@@ -74,7 +68,7 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
         {calculateRepetitions(topWords).map((word, index) => (
           <span
             key={`top-${index}`}
-            className="mx-8 text-[100px] font-black uppercase text-black leading-none"
+            className="mx-8 text-[45px] md:text-[100px] font-black uppercase text-black leading-none"
           >
             {word}
           </span>
@@ -93,7 +87,7 @@ const ScrollingBanners = ({ topWords, bottomWords }: ScrollingBannersProps) => {
         {calculateRepetitions(bottomWords).map((word, index) => (
           <span
             key={`bottom-${index}`}
-            className="mx-8 text-[100px] font-black uppercase leading-none"
+            className="mx-8 text-[45px] md:text-[100px] font-black uppercase leading-none"
             style={{
               color: 'white',
               textShadow: `

@@ -24,8 +24,14 @@ module.exports = {
         handwriting: ['"Dancing Script"', 'cursive']
       },
       fontSize: {
-        '8xl': '6rem', 
-        '9xl': '8rem',
+        '4xl': '2.25rem',   // 36px
+        '5xl': '2.5rem',    // 40px
+        '6xl': '3rem',      // 48px 
+        '7xl': '4rem',      // 64px
+        '8xl': '6rem',      // 96px
+        '9xl': '8rem',      // 128px
+        'banner-mobile': '2.8125rem',  // 45px
+        'banner-desktop': '6.25rem'    // 100px
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
@@ -44,10 +50,9 @@ module.exports = {
       }
     },
     container: {
-      center: true,     // Permet de centrer automatiquement
-      padding: '1rem',  // Ajoute du padding horizontal
+      center: true,    
+      padding: '1rem',  
       screens: {
-        // Tu ajustes ces largeurs de breakpoint pour le container
         sm: '640px',
         md: '768px',
         lg: '1024px',

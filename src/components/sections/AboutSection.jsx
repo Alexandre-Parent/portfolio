@@ -10,7 +10,7 @@ const AboutSection = () => {
   const radius = 50;
 
   return (
-    <section className="relative bg-white py-24 w-full" aria-labelledby="about-section-title">
+    <section className="relative bg-white  py-8 md:py-24 w-full" aria-labelledby="about-section-title">
       <div className="w-full grid md:grid-cols-[1fr_2fr] gap-8 px-4 max-w-7xl mx-auto">
         
         {/* Colonne gauche - Photo */}
@@ -29,7 +29,7 @@ const AboutSection = () => {
               }}
             >
               <img
-                src="/portrait.jpg"
+                src="/img/moi.jpg"
                 alt="Alexandre Parent, développeur full-stack"
                 className="w-full h-full object-cover grayscale contrast-110"
                 loading="lazy"
@@ -83,8 +83,8 @@ const AboutSection = () => {
                 }}
               />
                 <a
-              href="/cv-alexandre-parent.pdf"
-              download="CV_Alexandre_Parent.pdf"
+              href="/files/CV_AlexandreParent.pdf" 
+              target="_blank"
               className="absolute bottom-0 left-0 w-32 h-32 group z-20 block cursor-pointer"
               style={{
                 bottom: '-50px',
@@ -147,10 +147,10 @@ const AboutSection = () => {
         </div>
 
         {/* Colonne droite - Contenu */}
-        <div className="md:pl-16 space-y-8">
+        <div className="md:pl-16 space-y-8 py-16 md:py-0" >
           <h2 
             id="about-section-title" 
-            className="text-xl font-bold text-[#b0003a] mb-4 uppercase tracking-widest"
+            className="text-xl font-bold text-[#b0003a]  mb-4 uppercase tracking-widest"
           >
             À Propos
           </h2>
@@ -191,7 +191,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24">
+      <div className="mt-12 md:mt-24">
       <ScrollingBanners 
     topWords={['FULLSTACK DEVELOPER', 'JAVASCRIPT SPECIALIST', 'FRONTEND ARCHITECT']} 
     bottomWords={['OPEN FOR WORK', 'Let’s Work Together', "READY TO INNOVATE"]} 
@@ -204,11 +204,11 @@ const AboutSection = () => {
 
 const InfoItem = ({ label, value }) => (
   <div 
-    className="flex items-center space-x-4"
+    className="flex flex-col md:flex-row md:items-center md:space-x-4 w-full"
     role="row"
   >
-    <span className="text-black w-1/3">{label}</span>
-    <span className="font-medium text-black text-left w-2/3 ">{value}</span>
+    <span className="text-black md:w-1/3 w-full">{label}</span>
+    <span className="font-medium text-black md:text-left w-full md:w-2/3">{value}</span>
   </div>
 );
 

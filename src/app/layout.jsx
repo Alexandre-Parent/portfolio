@@ -1,7 +1,7 @@
 import { Inter, Fira_Code } from 'next/font/google'
 import './globals.css'
+import CustomCursor from '../components/common/CustomCursor'
 
-// Configuration des polices Google optimisées
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -20,7 +20,7 @@ export const metadata = {
     template: '%s | Alexandre Parent'
   },
   description: 'Portfolio créatif d\'un développeur web passionné par les solutions innovantes',
-  keywords: 'Développement web, React, Next.js, TypeScript, Full-Stack',
+  keywords: 'Développement web, Freelance, Front-End, React, Next.js, TypeScript, Full-Stack',
   themeColor: '#3b82f6',
   openGraph: {
     images: '/og-image.png',
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className="font-sans bg-white text-dark antialiased transition-colors duration-300">
+      <CustomCursor />
         {/* Structure principale */}
         <div className="min-h-screen flex flex-col">
           <main className="flex-1 overflow-x-hidden">
@@ -44,13 +45,6 @@ export default function RootLayout({ children }) {
             </div>
           </main>
         </div>
-
-        {/* Scripts analytiques (exemple) */}
-        <script
-          async
-          src="https://analytics.example.com/script.js"
-          data-website-id="XXXXXXXX"
-        />
       </body>
     </html>
   )
