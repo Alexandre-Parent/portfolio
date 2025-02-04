@@ -175,7 +175,7 @@ const AboutSection = () => {
             <InfoItem label="Nom" value="Alexandre Parent" />
             <InfoItem label="Âge" value="26 ans" />
             <InfoItem label="Expérience" value="3 ans" />
-            <InfoItem label="Téléphone" value="+33 6 18 73 49 23" />
+            <InfoItem label="Téléphone" value="06 18 73 49 23" />
             <InfoItem label="Email" value="alexandrepar.pro@gmail.com" />
           </div>
 
