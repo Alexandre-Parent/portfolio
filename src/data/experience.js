@@ -8,25 +8,23 @@ export const experiences = [
       subtitle: "Freelance",
       description: "Conception et développement d'applications web sur mesure"
     },
-    rightContent: {
-      
-    }
   },
   {
     period: "2020-2023",
     leftContent: {
       type: 'job',
-      logo: '/img/experience/logoshin.png',
-      title: "Développeur Fullstack",
-      subtitle: "Shin agency",
-      description: "Conception et développement de sites e-commerce et vitrines. Maintenance et évolutions. Mise en place de tests automatisés"
-    },
-    rightContent: {
-      type: 'job',
       logo: '/img/experience/logoHetic.png',
       title: "Mastère CTO & Tech Lead",
       subtitle: "Hetic",
       description: "Le Mastère CTO & Tech Lead permet d’acquérir une expertise forte dans les langages, les infrastructures et les méthodologies de programmation."
+     
+    },
+    rightContent: {
+      type: 'job',
+      logo: '/img/experience/logoshin.png',
+      title: "Développeur Fullstack",
+      subtitle: "Shin agency",
+      description: "Conception et développement de sites e-commerce et vitrines. Maintenance et évolutions. Mise en place de tests automatisés"
     }
   },
   {

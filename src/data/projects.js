@@ -7,7 +7,9 @@ const projects = [
     technologies: ['Wordpress', 'Nodejs', 'PHP', 'Twig', 'TypeScript'],
     // githubLink: 'https://github.com/Alexandre-Parent/portfolio',
     liveLink: 'https://www.andros.fr/',
-    category: 'Vitrine'
+    category: 'Vitrine',
+    development: 'Front-end'
+
   },
   {
     id: 2,
@@ -17,7 +19,8 @@ const projects = [
     technologies: ['Prestashop', 'PHP', 'Stripe', 'Paypal', 'MySQL'],
     // githubLink: 'https://github.com/Alexandre-Parent/ecommerce-project',
     liveLink: 'https://louloudesaison.com/fr/',
-    category: 'E-commerce'
+    category: 'E-commerce',
+    development: 'FullStack'
   },
   {
     id: 3,
@@ -27,7 +30,9 @@ const projects = [
     technologies: ['Next.js', 'JWT', 'TypeScript','MongoDB','Jest', 'CRON'],
     githubLink: 'https://github.com/Alexandre-Parent/perf-guardian',
     liveLink: 'https://perf-guardian.vercel.app/login',
-    category: 'Projet'
+    category: 'Projet',
+    development: 'FullStack'
+
   },
   {
     id: 4,
@@ -37,17 +42,19 @@ const projects = [
     technologies: ['Wordpress', 'PHP', 'Twig', 'jQuery', 'ACF', 'TypeScript'],
     // githubLink: 'https://github.com/Alexandre-Parent/blog',
       liveLink: 'https://www.lesterresdenatae.fr/',
-    category: 'Vitrine'
+    category: 'Vitrine',
+    development: 'Front-end'
   },
   {
     id: 5,
     title: 'Blog React TS',
-    description: "Blog React TS est une application de blog personnel développée avec React et TypeScript, intégrant un backend Express et une base de données MongoDB pour la gestion des contenus, ainsi que Firebase pour des fonctionnalités d'authentification ou de stockage, illustrant une stack technique moderne et full-stack.",
+    description: "Blog React TS est une application de blog personnel développent avec React et TypeScript, intégrant un backend Express et une base de données MongoDB pour la gestion des contenus, ainsi que Firebase pour des fonctionnalités d'authentification ou de stockage, illustrant une stack technique moderne et full-stack.",
     image: '/img/projets/reactblog.png',
     technologies: ['React', 'MongoDB', 'TypeScript','Firebase','Express'],
     githubLink: 'https://github.com/Alexandre-Parent/React-blog',
     // liveLink: 'https://blog-demo.com',
-    category: 'Projet'
+    category: 'Projet',
+    development: 'Fullstack'
   },
 ];
 

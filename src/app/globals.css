@@ -31,32 +31,14 @@
     position: relative;
   }
 
-  .experience-timeline > div {
-    flex-direction: column !important;
-    align-items: center;
-    position: relative;
-    padding-top: 160px;
-  }
-
-  .experience-timeline > div > div:first-child {
+  .experience-timeline::before {
+    content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-  }
-  
-  .experience-timeline > div > div:nth-child(2),
-  .experience-timeline > div > div:nth-child(3) {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    order: 2;
-    text-align: center;
+    top: -15px;
+    bottom: 0;
+    left: -10px; 
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
-  /* Remove timeline bar on mobile */
-  .experience-timeline > div::before {
-    display: none !important;
-  }
 }

@@ -5,17 +5,24 @@ export default function ProjectItem({ project, onProjectSelect }) {
     <div 
       className="group relative w-full border-b border-gray-200 pb-4 pt-2 flex items-center justify-between"
     >
-      <div className='w-full'>
+      <div className='w-full'  onClick={() => onProjectSelect(project)}>
         <div className="flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-8 mb-2">
-          <span className="inline-block w-[100px] text-xs font-semibold tracking-widest uppercase text-gray-400 text-left">
-            {project.category || 'DEVELOPMENT'}
-          </span>
-          <h4 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {project.title}
-          </h4>
+          <div>
+            <span className="inline-block text-xs font-semibold tracking-widest uppercase text-gray-400 text-left mb-2 md:mb-8  block">
+              {project.category || 'DEVELOPMENT'}
+            </span>
+            <h4 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {project.title}
+            </h4>
+            {project.development && (
+              <p className="text-sm text-black-500 mt-1">
+                {project.development}
+              </p>
+            )}
+          </div>
         </div>
         
-        <div className="flex w-full items-center justify-between mt-4 md:hidden">
+        <div className="flex w-full items-center justify-between mt-4 md:hidden" > 
           <div 
             className="relative max-w-[70%] w-[250px] h-[188px] overflow-hidden rounded-lg 
                        transform origin-center transition-all duration-300

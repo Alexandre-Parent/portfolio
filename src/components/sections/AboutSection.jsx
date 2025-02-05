@@ -184,9 +184,9 @@ const AboutSection = () => {
               <div className="font-handwriting text-3xl text-[#b0003a]">
                 Alexandre Parent
               </div>
-              <div className="text-black">
+              {/* <div className="text-black">
                 <span className="block">Full-Stack Developer</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -207,8 +207,8 @@ const InfoItem = ({ label, value }) => (
     className="flex flex-col md:flex-row md:items-center md:space-x-4 w-full"
     role="row"
   >
-    <span className="text-black md:w-1/3 w-full">{label}</span>
-    <span className="font-medium text-black md:text-left w-full md:w-2/3">{value}</span>
+    <span className="text-black font-bold md:w-1/3 w-full">{label}</span>
+    <span className="text-black md:text-left w-full md:w-2/3">{value}</span>
   </div>
 );
 
