@@ -21,7 +21,7 @@ export default function ProjectsSection() {
         <h3 className="text-2xl md:text-3xl font-bold leading-tight text-black md:text-center mb-16 text-left">
           Quelques projets sur lesquels j'ai travaillé
         </h3>
-        <div className="space-y-8">
+        <div id='projets' className="space-y-8">
           {projects.map((project) => (
             <ProjectItem 
               key={project.id}

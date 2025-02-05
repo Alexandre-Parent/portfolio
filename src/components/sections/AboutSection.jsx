@@ -103,7 +103,7 @@ const AboutSection = () => {
                     return (
                       <span
                         key={index}
-                        className={`absolute text-[8px] font-bold uppercase ${
+                        className={`absolute text-[10px] font-bold uppercase ${
                           char === ' ' ? 'opacity-0' : 'text-black'
                         }`}
                         style={{
