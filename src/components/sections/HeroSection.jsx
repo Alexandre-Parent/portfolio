@@ -16,9 +16,12 @@ export default function HeroSection() {
               <span className="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
               <span>Disponible pour travailler</span>
             </div>
-            <h1 className="text-6xl  md:text-7xl lg:text-9xl font-bold text-black uppercase mt-8 px-4 mb-12 leading-[0.95]">
+            <h1 className="text-6xl  md:text-7xl lg:text-9xl font-bold text-black uppercase mt-8 px-4 mb-4 leading-[0.95]">
               Alexandre Parent
             </h1>
+            <p className="text-xl md:text-2xl text-black-700 mb-12">
+              Développeur front end / fullstack JS
+            </p>
           </div>
           
           <div className="space-y-2">
