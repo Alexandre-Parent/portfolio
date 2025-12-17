@@ -47,14 +47,15 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Blog React TS',
-    description: "Blog React TS est une application de blog personnel développent avec React et TypeScript, intégrant un backend Express et une base de données MongoDB pour la gestion des contenus, ainsi que Firebase pour des fonctionnalités d'authentification ou de stockage, illustrant une stack technique moderne et full-stack.",
-    image: '/img/projets/reactblog.png',
-    technologies: ['React', 'MongoDB', 'TypeScript','Firebase','Express'],
-    githubLink: 'https://github.com/Alexandre-Parent/React-blog',
-    // liveLink: 'https://blog-demo.com',
+    title: 'Chroniques GSAP',
+    description:
+        "Chroniques GSAP est une landing page immersive réalisée en React et GSAP, mettant en avant des animations fluides et dynamiques. Le projet utilise Tailwind CSS pour la mise en page et le design responsive. Le tout pour rendre hommage à l'univers de la série Yu-Gi-Oh !",
+    image: '/img/projets/ygogsap.png',
+    technologies: ['React', 'GSAP', 'Tailwind CSS'],
+    githubLink: 'https://github.com/Alexandre-Parent/ygoGsap',
+    liveLink: 'https://ygogsap.netlify.app/',
     category: 'Projet',
-    development: 'Fullstack'
+    development: 'Front-end'
   },
 ];
 
